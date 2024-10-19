@@ -1,0 +1,63 @@
+﻿@using WebApp1.Models;
+@model IList<Blog>
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h2>Danh sách bài viết</h2>
+    </div>
+
+    <p>
+        <a type="button" class="btn btn-success" asp-area="Admin" asp-controller="Blogs" asp-action="Create" style="background-color:#49c1c5">
+            <i class="bi bi-plus"></i>Thêm bài
+        </a>
+    </p>
+
+    <section class="section dashboard">
+        <div class="row">
+            <div class="col-12">
+                <div class="card recent-sales overflow-auto">
+                    <div class="card-body mt-4">
+                        <table class="table table-borderless datatable">
+                            <thead>
+                                <tr>
+                                    <th class="col-1 text-center border">Thứ tự</th>
+                                    <th class="col-3 text-center border">Tiêu đề</th>
+                                    <th class="col-1 text-center border">Trạng thái</th>
+                                    <th class="col-2 text-center border">Chức năng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    int i = 1;
+                                }
+                                @foreach (var item in Model)
+                                {
+                                    <tr id="tr_@item.BlogID">
+                                        <td class="text-center border">@(i++)</td>
+                                        <td class ="text-center border">
+                                            @item.Title
+                                        </td>
+                                        <td class="text-center border">@item.IsActive</td>
+                                        <td class="text-center border">
+                                            <a asp-area="Admin" asp-controller="Blogs" asp-action="Edit"
+                                               asp-route-id="@item.BlogID" class="btn btn-primary "
+                                               title="Sửa thông tin "><i class="bi bi-pencil-square"></i></a> |
+                                            <a asp-area="Admin" asp-controller="Blogs" asp-action="Details"
+                                               asp-route-id="@item.BlogID" class="btn btn-info "
+                                               title="Chi tiết "><i class="bi bi-eye"></i></a> |
+                                            <a asp-area="Admin" asp-controller="Blogs" asp-action="Delete"
+                                               asp-route-id="@item.BlogID" class="btn btn-danger "
+                                               title="Xóa "><i class="bi bi-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

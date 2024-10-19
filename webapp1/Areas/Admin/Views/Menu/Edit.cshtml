@@ -1,0 +1,68 @@
+﻿@model WebApp1.Models.Menu
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<main id="main" class="main">
+    <div class="container shadow p-4">
+        <div class="row pb-2">
+            <h3>Sửa thông tin Menu</h3>
+        </div>
+    <form method="post" asp-action="Edit">
+        <div asp-validation-summary="All"></div>
+        <div class="form-row">
+            <input type="text" class="form-control mb-3" asp-for="MenuID" type="hidden">
+
+            <div class="tox-form-group--maximize col-md-6">
+                <label asp-for="MenuName">Tên Menu</label>
+                <input type="text" class="form-control mb-3" asp-for=" MenuName" placeholder="Nhập tên menu">
+                <span asp-validation-for="MenuName" class=" alert-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Levels">Cấp độ</label>
+                    <select asp-for="Levels" class="form-select" id="Levels">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <div class="alert-danger" asp-validation-summary="ModelOnly"></div>
+                    <label asp-for="ParentID">Menu cha</label>
+                    <select asp-for="ParentID" class="form-control" asp-items="@(new SelectList(ViewBag.mnList,"Value", "Text"))">
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Link">Link</label>
+                    <input type="text" class="form-control mb-3" asp-for="Link" placeholder="Enter Link">
+                    <span asp-validation-for="Link" class=" alert-danger"></span>
+                </div>
+
+                    <div class="form-group col-md-6">
+                        <label asp-for="MenuOrder">MenuOrder</label>
+                        <input type="text" class="form-control mb-3" asp-for="MenuOrder" placeholder="Enter MenuOrder">
+                        <span asp-validation-for="MenuOrder" class=" alert-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label asp-for="Position">Thứ tự</label>
+                        <input type="text" class="form-control mb-3" asp-for="Position" placeholder="Position">
+                        <span asp-validation-for="Position" class=" alert-danger"></span>
+                    </div>
+
+                    <div class="form-group col-md-6 mt-3 mb-3">
+                        <label class="btn btn-group-sm" style="background-color:0A7744;color: black">
+                            @Html.CheckBox("IsActive", true)
+                            Hiển thị
+                        </label>
+                    </div>
+            </div>
+        </div>
+            <a asp-controller="Menu" asp-action="Index" class="btn btn-lg btn-warning"><i class="bi bi-box-arrow-in-left"></i> Quay lại</a>
+        <button type="submit" class="btn btn-lg btn-primary p-2"><i class="bi bi-clipboard-plus"></i> Lưu</button>
+    </form>
+    </div>
+</main>
