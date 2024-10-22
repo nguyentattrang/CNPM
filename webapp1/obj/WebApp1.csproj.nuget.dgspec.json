@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\source\\repos\\webapp1\\WebApp1\\WebApp1.csproj": {}
+    "D:\\DA_CNPM\\QuanLyTaiLieuSV\\WebApp1\\WebApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\source\\repos\\webapp1\\WebApp1\\WebApp1.csproj": {
+    "D:\\DA_CNPM\\QuanLyTaiLieuSV\\WebApp1\\WebApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\webapp1\\WebApp1\\WebApp1.csproj",
+        "projectUniqueName": "D:\\DA_CNPM\\QuanLyTaiLieuSV\\WebApp1\\WebApp1.csproj",
         "projectName": "WebApp1",
-        "projectPath": "C:\\Users\\DELL\\source\\repos\\webapp1\\WebApp1\\WebApp1.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\source\\repos\\webapp1\\WebApp1\\obj\\",
+        "projectPath": "D:\\DA_CNPM\\QuanLyTaiLieuSV\\WebApp1\\WebApp1.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\DA_CNPM\\QuanLyTaiLieuSV\\WebApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -91,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

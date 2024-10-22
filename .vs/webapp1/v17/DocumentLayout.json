@@ -1,12 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\webapp1\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\DA_CNPM\\QuanLyTaiLieuSV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{901AFD1F-CEF0-43A4-A306-52B455A929A3}|WebApp1\\WebApp1.csproj|d:\\da_cnpm\\quanlytailieusv\\webapp1\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{901AFD1F-CEF0-43A4-A306-52B455A929A3}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{901AFD1F-CEF0-43A4-A306-52B455A929A3}|WebApp1\\WebApp1.csproj|d:\\da_cnpm\\quanlytailieusv\\webapp1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{901AFD1F-CEF0-43A4-A306-52B455A929A3}|WebApp1\\WebApp1.csproj|solutionrelative:webapp1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DA_CNPM\\QuanLyTaiLieuSV\\webapp1\\appsettings.json",
+              "RelativeDocumentMoniker": "webapp1\\appsettings.json",
+              "ToolTip": "D:\\DA_CNPM\\QuanLyTaiLieuSV\\webapp1\\appsettings.json",
+              "RelativeToolTip": "webapp1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-22T03:03:03.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "D:\\DA_CNPM\\QuanLyTaiLieuSV\\webapp1\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "webapp1\\Controllers\\BlogController.cs",
+              "ToolTip": "D:\\DA_CNPM\\QuanLyTaiLieuSV\\webapp1\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "webapp1\\Controllers\\BlogController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T03:02:32.792Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
